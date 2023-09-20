@@ -23,6 +23,16 @@ import {
 } from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
 
+import spindl from "@spindl-xyz/attribution";
+// import spind from "@spindl-xyz/attribution-lite" // for lite version customers
+
+spindl.configure({
+  sdkKey: process.env.NEXT_PUBLIC_SPINDL_SDK_KEY as string,
+  debugMode: true, // only to use for testing to see console logs in browser. Set to false in production
+});
+
+spindl.enableAutoPageViews();
+
 const { chains, publicClient, webSocketPublicClient } = configureChains(
   [
     mainnet,

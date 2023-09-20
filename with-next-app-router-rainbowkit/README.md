@@ -1,30 +1,99 @@
-This is a [Next.js](https://nextjs.org/) 13 App Router project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Spindl SDK Demo Using Rainbow Starter Kit (inc. wagmi + next.js)
 
-## Getting Started
+### Initalizing SDK & Tracking Page Views
 
-First, run the development server:
+- For App router, you can use `app/providers.tsx`. We need the SDK to be initilized in a `"use client"` environment
+- For other react apps, you can use the root file when react is getting initlized
+
+```tsx
+import spindl from "@spindl-xyz/attribution"; // we recommend this package for most clients since it has full set of features
+// import spind from "@spindl-xyz/attribution-lite" // only for lite version customers
+
+spindl.configure({
+  sdkKey: process.env.NEXT_PUBLIC_SPINDL_SDK_KEY as string,
+  debugMode: true, // we recommend only to have this when testing. you will see console.logs of emitted events in browser
+});
+
+spindl.enableAutoPageViews(); // this auto tracks page views
+```
+
+### Attributing/Tracking Wallet Connects
+
+example is found in `app/page.tsx`
+
+With `wagmi`, rainbow kit, and other popular wallet libraries, each time a user is signed in with their wallet, you can use ` spindl.attribute(address)`
+
+```tsx
+import spindl from "@spindl-xyz/attribution";
+// import spind from "@spindl-xyz/attribution-lite" // only for lite version customers
+
+import { useAccount } from "wagmi";
+
+// ...
+const Component = () => {
+  const { address } = useAccount();
+
+  useEffect(() => {
+    if (address) {
+      spindl.attribute(address);
+    }
+  }, [address]);
+  // ...
+};
+```
+
+### Tracking Custom Events
+
+example is found in `app/page.tsx`
+
+Any Custom Events you want to track can be done so via `spindl.track(eventName, optionalJsonProperties)`
+
+```tsx
+import spindl from "@spindl-xyz/attribution";
+// import spind from "@spindl-xyz/attribution-lite" // only for lite version customers
+
+// ...
+const Component = () => {
+  const { address } = useAccount();
+
+  const customEventName = "ADD_TO_CART";
+  const optionalJsonProperties = { custom_properties: "here" };
+
+  return (
+    <div>
+      <button
+        onClick={() => {
+          spindl.track(customEventName, optionalCusomProperties);
+        }}
+      >
+        Custom Event Trigger
+      </button>
+    </div>
+  );
+};
+```
+
+## Running The Repo
+
+1. Install
+
+```bash
+npm install
+```
+
+2. Copy variables and fill them.
+
+```
+cp .env.local.example .env.local
+```
+
+- For Spindl SDK, you need to populate: `NEXT_PUBLIC_SPINDL_SDK_KEY`.
+- In order to make rainbowkit work, you will also need a project id `NEXT_PUBLIC_PROJECT_ID`. More info [here](https://www.rainbowkit.com/docs/installation#configure)
+
+3. You can run development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
