@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CDN Demo Website</title>
+    <!-- Add Tailwind CSS either through CDN or via your build process here -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script async 
+      data-key="ADD_sdkKey_HERE"
+      data-name="spindl-sdk" 
+      src="https://cdn.spindl.xyz/attribution-latest.js">
+    </script>
+    <script src="./main.js" type="module"></script>
+  </head>
+  <body class="bg-gray-100 h-screen font-sans">
+    <div class="container mx-auto p-8 flex justify-center items-center h-full">
+      <div class="p-6 max-w-m w-full bg-white shadow-md rounded-md">
+        <div class="flex justify-between items-center">
+          <span class="text-gray-600 text-sm">CDN Demo Website</span>
+        </div>
+        <div class="mt-4">
+          <button
+            onclick="manualPageView()"
+            class="px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none"
+          >
+            Manual Page View
+          </button>
+          <w3m-core-button></w3m-core-button>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Async script automatically loads the sdk and enableAutoPageView + enableWalletConnect
+      // so we don't need to execute it manually
+
+      async function manualPageView() {
+        await window.spindl.pageView();
+        console.log("executed manual page view");
+      }
+    </script>
+  </body>
+</html>
