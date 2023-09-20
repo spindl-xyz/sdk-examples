@@ -1,11 +1,10 @@
 ## Example of using ASYNC CDN with Attribution SDK
 
-The Main difference between Async CDN & Regular CDN is:
+This CDN Script Does the following:
 
-1. You pass in the sdkKey directly into the async script. For regular cdn script you will need to instantiate sdk manually.
-2. Async script automatically enables autoPageViews + walletConnects
-
-- Wallet Connects only track Wallets that are connected through Metamask
+1. Async script automatically enables autoPageViews + walletConnects
+2. Wallet Connects only track Wallets that are connected through Metamask
+3. You can access it in `window.spindl` and track extra custom events & other properties
 
 ```html
 ...
