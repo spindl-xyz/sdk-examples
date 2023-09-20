@@ -7,7 +7,7 @@
 
 ```tsx
 import spindl from "@spindl-xyz/attribution"; // we recommend this package for most clients since it has full set of features
-// import spind from "@spindl-xyz/attribution-lite" // only for lite version customers
+// import spindl from "@spindl-xyz/attribution-lite" // only for lite version customers
 
 spindl.configure({
   sdkKey: process.env.NEXT_PUBLIC_SPINDL_SDK_KEY as string,
@@ -25,7 +25,7 @@ With `wagmi`, rainbow kit, and other popular wallet libraries, each time a user 
 
 ```tsx
 import spindl from "@spindl-xyz/attribution";
-// import spind from "@spindl-xyz/attribution-lite" // only for lite version customers
+// import spindl from "@spindl-xyz/attribution-lite" // only for lite version customers
 
 import { useAccount } from "wagmi";
 
@@ -50,7 +50,7 @@ Any Custom Events you want to track can be done so via `spindl.track(eventName, 
 
 ```tsx
 import spindl from "@spindl-xyz/attribution";
-// import spind from "@spindl-xyz/attribution-lite" // only for lite version customers
+// import spindl from "@spindl-xyz/attribution-lite" // only for lite version customers
 
 // ...
 const Component = () => {

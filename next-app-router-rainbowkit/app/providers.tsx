@@ -24,7 +24,7 @@ import {
 import { publicProvider } from "wagmi/providers/public";
 
 import spindl from "@spindl-xyz/attribution";
-// import spind from "@spindl-xyz/attribution-lite" // for lite version customers
+// import spindl from "@spindl-xyz/attribution-lite" // for lite version customers
 
 spindl.configure({
   sdkKey: process.env.NEXT_PUBLIC_SPINDL_SDK_KEY as string,

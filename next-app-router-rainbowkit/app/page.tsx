@@ -5,7 +5,7 @@ import { useAccount } from "wagmi";
 
 import spindl from "@spindl-xyz/attribution";
 import { useEffect } from "react";
-// import spind from "@spindl-xyz/attribution-lite" // for lite version customers
+// import spindl from "@spindl-xyz/attribution-lite" // for lite version customers
 
 function Page() {
   const { address } = useAccount();
