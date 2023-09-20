@@ -2,7 +2,7 @@
 
 ### Initalizing SDK & Tracking Page Views
 
-- For App router, you can use `app/providers.tsx`. We need the SDK to be initilized in a `"use client"` environment
+- For App router, you can reference `app/providers.tsx` for initialization. We need the SDK to be initilized in a `"use client"` environment
 - For other react apps, you can use the root file when react is getting initlized
 
 ```tsx
