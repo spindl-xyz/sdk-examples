@@ -46,26 +46,6 @@ const Home: NextPage = () => {
           Welcome to <a href="">RainbowKit</a> + <a href="">wagmi</a> +{" "}
           <a href="https://nextjs.org">Next.js!</a>
         </h1>
-
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a className={styles.card} href="https://rainbowkit.com">
-            <h2>RainbowKit Documentation &rarr;</h2>
-            <p>Learn how to customize your wallet connection flow.</p>
-          </a>
-
-          <button
-            onClick={() => {
-              spindl.track("ADD_TO_CART", { custom_properties: "here" });
-            }}
-          >
-            Custom Event Trigger
-          </button>
-        </div>
       </main>
     </div>
   );
