@@ -7,7 +7,7 @@ import { arbitrum, goerli, mainnet, optimism, polygon } from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
 
 import spindl from "@spindl-xyz/attribution";
-// import spindl from "@spindl-xyz/attribution-lite" // for lite version customers
+// import spindl from "@spindl-xyz/attribution-lite"; // for lite version customers
 
 spindl.configure({
   sdkKey: process.env.NEXT_PUBLIC_SPINDL_SDK_KEY as string,

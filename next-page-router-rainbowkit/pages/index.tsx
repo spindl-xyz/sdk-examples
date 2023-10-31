@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import { useAccount } from "wagmi";
 
 import spindl from "@spindl-xyz/attribution";
-// import spindl from "@spindl-xyz/attribution-lite" // for lite version customers
+// import spindl from "@spindl-xyz/attribution-lite"; // for lite version customers
 
 const Home: NextPage = () => {
   const { address } = useAccount();
@@ -34,9 +34,16 @@ const Home: NextPage = () => {
 
         <button
           onClick={() => {
-            spindl.track("test_event", {
-              custom: "data goes here",
-            });
+            spindl.track(
+              "test_event",
+              {
+                custom: "data goes here",
+              },
+              {
+                address: "0x1234...", // optional
+                customerUserId: "1234", // optional
+              }
+            );
           }}
         >
           Track Custom Event
