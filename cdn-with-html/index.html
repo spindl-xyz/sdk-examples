@@ -32,22 +32,39 @@
         </div>
         <div class="mt-4">
           <button
-            onclick="manualPageView()"
+            onclick="manualCustomEvent()"
             class="px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none"
           >
-            Manual Page View
+            Manual Custom Event
+          </button>
+          <button
+            onclick="manualAddressAttribution()"
+            class="px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none"
+          >
+            Manual Wallet Connect
           </button>
           <w3m-core-button></w3m-core-button>
         </div>
       </div>
     </div>
     <script>
-      // Async script automatically loads the sdk and enableAutoPageView + enableWalletConnect
-      // so we don't need to execute it manually
+      async function manualCustomEvent() {
+        await window.spindl.track(
+          "Test Event 333",
+          {
+            test: "custom props can go here", // optional
+          },
+          {
+            address: "0x1234", // optional
+            customerUserId: "1234", // optional
+          }
+        );
+        console.log("executed custom page view");
+      }
 
-      async function manualPageView() {
-        await window.spindl.pageView();
-        console.log("executed manual page view");
+      async function manualAddressAttribution() {
+        await window.spindl.attribute("0x9999");
+        console.log("executed manual address attribution");
       }
     </script>
   </body>

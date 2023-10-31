@@ -27,9 +27,16 @@ function Page() {
       <ConnectButton />
       <button
         onClick={() => {
-          spindl.track("test_event", {
-            custom: "data goes here",
-          });
+          spindl.track(
+            "test_event",
+            {
+              custom: "data goes here", // optional
+            },
+            {
+              address: "0x1234...", // optional
+              customerUserId: "1234", // optional
+            }
+          );
         }}
       >
         Track Custom Event
