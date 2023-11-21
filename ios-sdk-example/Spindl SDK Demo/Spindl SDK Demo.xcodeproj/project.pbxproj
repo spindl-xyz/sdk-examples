@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24DC01972B0CD2DE0020AC12 /* Spindl_SDK_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DC01962B0CD2DE0020AC12 /* Spindl_SDK_DemoApp.swift */; };
+		24DC01992B0CD2DE0020AC12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DC01982B0CD2DE0020AC12 /* ContentView.swift */; };
+		24DC019B2B0CD2F70020AC12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24DC019A2B0CD2F70020AC12 /* Assets.xcassets */; };
+		24DC019F2B0CD2F70020AC12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24DC019E2B0CD2F70020AC12 /* Preview Assets.xcassets */; };
+		24DC01A92B0CD2F90020AC12 /* Spindl_SDK_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DC01A82B0CD2F90020AC12 /* Spindl_SDK_DemoTests.swift */; };
+		24DC01B32B0CD2F90020AC12 /* Spindl_SDK_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DC01B22B0CD2F90020AC12 /* Spindl_SDK_DemoUITests.swift */; };
+		24DC01B52B0CD2F90020AC12 /* Spindl_SDK_DemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DC01B42B0CD2F90020AC12 /* Spindl_SDK_DemoUITestsLaunchTests.swift */; };
+		24DC01C32B0CD5F90020AC12 /* SpindlSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 24DC01C22B0CD5F90020AC12 /* SpindlSDK */; };
+		24DC01C62B0CE0DB0020AC12 /* SpindlSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 24DC01C52B0CE0DB0020AC12 /* SpindlSDK */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24DC01A52B0CD2F90020AC12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24DC018B2B0CD2DD0020AC12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24DC01922B0CD2DE0020AC12;
+			remoteInfo = "Spindl SDK Demo";
+		};
+		24DC01AF2B0CD2F90020AC12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24DC018B2B0CD2DD0020AC12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24DC01922B0CD2DE0020AC12;
+			remoteInfo = "Spindl SDK Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24DC01932B0CD2DE0020AC12 /* Spindl SDK Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spindl SDK Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24DC01962B0CD2DE0020AC12 /* Spindl_SDK_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spindl_SDK_DemoApp.swift; sourceTree = "<group>"; };
+		24DC01982B0CD2DE0020AC12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		24DC019A2B0CD2F70020AC12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24DC019C2B0CD2F70020AC12 /* Spindl_SDK_Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Spindl_SDK_Demo.entitlements; sourceTree = "<group>"; };
+		24DC019E2B0CD2F70020AC12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		24DC01A42B0CD2F90020AC12 /* Spindl SDK DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Spindl SDK DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24DC01A82B0CD2F90020AC12 /* Spindl_SDK_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spindl_SDK_DemoTests.swift; sourceTree = "<group>"; };
+		24DC01AE2B0CD2F90020AC12 /* Spindl SDK DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Spindl SDK DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24DC01B22B0CD2F90020AC12 /* Spindl_SDK_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spindl_SDK_DemoUITests.swift; sourceTree = "<group>"; };
+		24DC01B42B0CD2F90020AC12 /* Spindl_SDK_DemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spindl_SDK_DemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24DC01902B0CD2DE0020AC12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24DC01C32B0CD5F90020AC12 /* SpindlSDK in Frameworks */,
+				24DC01C62B0CE0DB0020AC12 /* SpindlSDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24DC01A12B0CD2F90020AC12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24DC01AB2B0CD2F90020AC12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24DC018A2B0CD2DD0020AC12 = {
+			isa = PBXGroup;
+			children = (
+				24DC01952B0CD2DE0020AC12 /* Spindl SDK Demo */,
+				24DC01A72B0CD2F90020AC12 /* Spindl SDK DemoTests */,
+				24DC01B12B0CD2F90020AC12 /* Spindl SDK DemoUITests */,
+				24DC01942B0CD2DE0020AC12 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24DC01942B0CD2DE0020AC12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24DC01932B0CD2DE0020AC12 /* Spindl SDK Demo.app */,
+				24DC01A42B0CD2F90020AC12 /* Spindl SDK DemoTests.xctest */,
+				24DC01AE2B0CD2F90020AC12 /* Spindl SDK DemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24DC01952B0CD2DE0020AC12 /* Spindl SDK Demo */ = {
+			isa = PBXGroup;
+			children = (
+				24DC01962B0CD2DE0020AC12 /* Spindl_SDK_DemoApp.swift */,
+				24DC01982B0CD2DE0020AC12 /* ContentView.swift */,
+				24DC019A2B0CD2F70020AC12 /* Assets.xcassets */,
+				24DC019C2B0CD2F70020AC12 /* Spindl_SDK_Demo.entitlements */,
+				24DC019D2B0CD2F70020AC12 /* Preview Content */,
+			);
+			path = "Spindl SDK Demo";
+			sourceTree = "<group>";
+		};
+		24DC019D2B0CD2F70020AC12 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				24DC019E2B0CD2F70020AC12 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		24DC01A72B0CD2F90020AC12 /* Spindl SDK DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				24DC01A82B0CD2F90020AC12 /* Spindl_SDK_DemoTests.swift */,
+			);
+			path = "Spindl SDK DemoTests";
+			sourceTree = "<group>";
+		};
+		24DC01B12B0CD2F90020AC12 /* Spindl SDK DemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				24DC01B22B0CD2F90020AC12 /* Spindl_SDK_DemoUITests.swift */,
+				24DC01B42B0CD2F90020AC12 /* Spindl_SDK_DemoUITestsLaunchTests.swift */,
+			);
+			path = "Spindl SDK DemoUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24DC01922B0CD2DE0020AC12 /* Spindl SDK Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24DC01B82B0CD2F90020AC12 /* Build configuration list for PBXNativeTarget "Spindl SDK Demo" */;
+			buildPhases = (
+				24DC018F2B0CD2DE0020AC12 /* Sources */,
+				24DC01902B0CD2DE0020AC12 /* Frameworks */,
+				24DC01912B0CD2DE0020AC12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Spindl SDK Demo";
+			packageProductDependencies = (
+				24DC01C22B0CD5F90020AC12 /* SpindlSDK */,
+				24DC01C52B0CE0DB0020AC12 /* SpindlSDK */,
+			);
+			productName = "Spindl SDK Demo";
+			productReference = 24DC01932B0CD2DE0020AC12 /* Spindl SDK Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24DC01A32B0CD2F90020AC12 /* Spindl SDK DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24DC01BB2B0CD2F90020AC12 /* Build configuration list for PBXNativeTarget "Spindl SDK DemoTests" */;
+			buildPhases = (
+				24DC01A02B0CD2F90020AC12 /* Sources */,
+				24DC01A12B0CD2F90020AC12 /* Frameworks */,
+				24DC01A22B0CD2F90020AC12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24DC01A62B0CD2F90020AC12 /* PBXTargetDependency */,
+			);
+			name = "Spindl SDK DemoTests";
+			productName = "Spindl SDK DemoTests";
+			productReference = 24DC01A42B0CD2F90020AC12 /* Spindl SDK DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		24DC01AD2B0CD2F90020AC12 /* Spindl SDK DemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24DC01BE2B0CD2F90020AC12 /* Build configuration list for PBXNativeTarget "Spindl SDK DemoUITests" */;
+			buildPhases = (
+				24DC01AA2B0CD2F90020AC12 /* Sources */,
+				24DC01AB2B0CD2F90020AC12 /* Frameworks */,
+				24DC01AC2B0CD2F90020AC12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24DC01B02B0CD2F90020AC12 /* PBXTargetDependency */,
+			);
+			name = "Spindl SDK DemoUITests";
+			productName = "Spindl SDK DemoUITests";
+			productReference = 24DC01AE2B0CD2F90020AC12 /* Spindl SDK DemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24DC018B2B0CD2DD0020AC12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					24DC01922B0CD2DE0020AC12 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					24DC01A32B0CD2F90020AC12 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 24DC01922B0CD2DE0020AC12;
+					};
+					24DC01AD2B0CD2F90020AC12 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 24DC01922B0CD2DE0020AC12;
+					};
+				};
+			};
+			buildConfigurationList = 24DC018E2B0CD2DD0020AC12 /* Build configuration list for PBXProject "Spindl SDK Demo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24DC018A2B0CD2DD0020AC12;
+			packageReferences = (
+				24DC01C42B0CE0DB0020AC12 /* XCLocalSwiftPackageReference "../../../spindl-ios/SpindlSDK" */,
+			);
+			productRefGroup = 24DC01942B0CD2DE0020AC12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24DC01922B0CD2DE0020AC12 /* Spindl SDK Demo */,
+				24DC01A32B0CD2F90020AC12 /* Spindl SDK DemoTests */,
+				24DC01AD2B0CD2F90020AC12 /* Spindl SDK DemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24DC01912B0CD2DE0020AC12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24DC019F2B0CD2F70020AC12 /* Preview Assets.xcassets in Resources */,
+				24DC019B2B0CD2F70020AC12 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24DC01A22B0CD2F90020AC12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24DC01AC2B0CD2F90020AC12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24DC018F2B0CD2DE0020AC12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24DC01992B0CD2DE0020AC12 /* ContentView.swift in Sources */,
+				24DC01972B0CD2DE0020AC12 /* Spindl_SDK_DemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24DC01A02B0CD2F90020AC12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24DC01A92B0CD2F90020AC12 /* Spindl_SDK_DemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24DC01AA2B0CD2F90020AC12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24DC01B52B0CD2F90020AC12 /* Spindl_SDK_DemoUITestsLaunchTests.swift in Sources */,
+				24DC01B32B0CD2F90020AC12 /* Spindl_SDK_DemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24DC01A62B0CD2F90020AC12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24DC01922B0CD2DE0020AC12 /* Spindl SDK Demo */;
+			targetProxy = 24DC01A52B0CD2F90020AC12 /* PBXContainerItemProxy */;
+		};
+		24DC01B02B0CD2F90020AC12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24DC01922B0CD2DE0020AC12 /* Spindl SDK Demo */;
+			targetProxy = 24DC01AF2B0CD2F90020AC12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		24DC01B62B0CD2F90020AC12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		24DC01B72B0CD2F90020AC12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		24DC01B92B0CD2F90020AC12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Spindl SDK Demo/Spindl_SDK_Demo.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Spindl SDK Demo/Preview Content\"";
+				DEVELOPMENT_TEAM = J2474BWJ22;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.spindl.Spindl-SDK-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24DC01BA2B0CD2F90020AC12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Spindl SDK Demo/Spindl_SDK_Demo.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Spindl SDK Demo/Preview Content\"";
+				DEVELOPMENT_TEAM = J2474BWJ22;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.spindl.Spindl-SDK-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		24DC01BC2B0CD2F90020AC12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J2474BWJ22;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.spindl.Spindl-SDK-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spindl SDK Demo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Spindl SDK Demo";
+			};
+			name = Debug;
+		};
+		24DC01BD2B0CD2F90020AC12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J2474BWJ22;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.spindl.Spindl-SDK-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spindl SDK Demo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Spindl SDK Demo";
+			};
+			name = Release;
+		};
+		24DC01BF2B0CD2F90020AC12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J2474BWJ22;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.spindl.Spindl-SDK-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Spindl SDK Demo";
+			};
+			name = Debug;
+		};
+		24DC01C02B0CD2F90020AC12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J2474BWJ22;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.spindl.Spindl-SDK-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Spindl SDK Demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24DC018E2B0CD2DD0020AC12 /* Build configuration list for PBXProject "Spindl SDK Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24DC01B62B0CD2F90020AC12 /* Debug */,
+				24DC01B72B0CD2F90020AC12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24DC01B82B0CD2F90020AC12 /* Build configuration list for PBXNativeTarget "Spindl SDK Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24DC01B92B0CD2F90020AC12 /* Debug */,
+				24DC01BA2B0CD2F90020AC12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24DC01BB2B0CD2F90020AC12 /* Build configuration list for PBXNativeTarget "Spindl SDK DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24DC01BC2B0CD2F90020AC12 /* Debug */,
+				24DC01BD2B0CD2F90020AC12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24DC01BE2B0CD2F90020AC12 /* Build configuration list for PBXNativeTarget "Spindl SDK DemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24DC01BF2B0CD2F90020AC12 /* Debug */,
+				24DC01C02B0CD2F90020AC12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		24DC01C42B0CE0DB0020AC12 /* XCLocalSwiftPackageReference "../../../spindl-ios/SpindlSDK" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../../spindl-ios/SpindlSDK";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		24DC01C22B0CD5F90020AC12 /* SpindlSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SpindlSDK;
+		};
+		24DC01C52B0CE0DB0020AC12 /* SpindlSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SpindlSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 24DC018B2B0CD2DD0020AC12 /* Project object */;
+}
