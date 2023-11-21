@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		249A8E702B0D235700B69145 /* DemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249A8E6F2B0D235700B69145 /* DemoViewModel.swift */; };
+		249A8E742B0D37BA00B69145 /* SpindlSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 249A8E732B0D37BA00B69145 /* SpindlSDK */; };
 		24DC01972B0CD2DE0020AC12 /* Spindl_SDK_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DC01962B0CD2DE0020AC12 /* Spindl_SDK_DemoApp.swift */; };
 		24DC01992B0CD2DE0020AC12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DC01982B0CD2DE0020AC12 /* ContentView.swift */; };
 		24DC019B2B0CD2F70020AC12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24DC019A2B0CD2F70020AC12 /* Assets.xcassets */; };
@@ -36,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		249A8E6F2B0D235700B69145 /* DemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewModel.swift; sourceTree = "<group>"; };
 		24DC01932B0CD2DE0020AC12 /* Spindl SDK Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spindl SDK Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24DC01962B0CD2DE0020AC12 /* Spindl_SDK_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spindl_SDK_DemoApp.swift; sourceTree = "<group>"; };
 		24DC01982B0CD2DE0020AC12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +59,7 @@
 			files = (
 				24DC01C32B0CD5F90020AC12 /* SpindlSDK in Frameworks */,
 				24DC01C62B0CE0DB0020AC12 /* SpindlSDK in Frameworks */,
+				249A8E742B0D37BA00B69145 /* SpindlSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +108,7 @@
 				24DC019A2B0CD2F70020AC12 /* Assets.xcassets */,
 				24DC019C2B0CD2F70020AC12 /* Spindl_SDK_Demo.entitlements */,
 				24DC019D2B0CD2F70020AC12 /* Preview Content */,
+				249A8E6F2B0D235700B69145 /* DemoViewModel.swift */,
 			);
 			path = "Spindl SDK Demo";
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 			packageProductDependencies = (
 				24DC01C22B0CD5F90020AC12 /* SpindlSDK */,
 				24DC01C52B0CE0DB0020AC12 /* SpindlSDK */,
+				249A8E732B0D37BA00B69145 /* SpindlSDK */,
 			);
 			productName = "Spindl SDK Demo";
 			productReference = 24DC01932B0CD2DE0020AC12 /* Spindl SDK Demo.app */;
@@ -226,7 +232,7 @@
 			);
 			mainGroup = 24DC018A2B0CD2DD0020AC12;
 			packageReferences = (
-				24DC01C42B0CE0DB0020AC12 /* XCLocalSwiftPackageReference "../../../spindl-ios/SpindlSDK" */,
+				249A8E722B0D37BA00B69145 /* XCLocalSwiftPackageReference "../../../spindl-ios/SpindlSDK" */,
 			);
 			productRefGroup = 24DC01942B0CD2DE0020AC12 /* Products */;
 			projectDirPath = "";
@@ -271,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24DC01992B0CD2DE0020AC12 /* ContentView.swift in Sources */,
+				249A8E702B0D235700B69145 /* DemoViewModel.swift in Sources */,
 				24DC01972B0CD2DE0020AC12 /* Spindl_SDK_DemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -630,13 +637,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		24DC01C42B0CE0DB0020AC12 /* XCLocalSwiftPackageReference "../../../spindl-ios/SpindlSDK" */ = {
+		249A8E722B0D37BA00B69145 /* XCLocalSwiftPackageReference "../../../spindl-ios/SpindlSDK" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = "../../../spindl-ios/SpindlSDK";
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		249A8E732B0D37BA00B69145 /* SpindlSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SpindlSDK;
+		};
 		24DC01C22B0CD5F90020AC12 /* SpindlSDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SpindlSDK;

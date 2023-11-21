@@ -8,6 +8,15 @@
         "revision" : "862808b2070cd908cb04f9aafe7de83d35f81b05",
         "version" : "0.6.7"
       }
+    },
+    {
+      "identity" : "blackbird",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/meir-toptal/Blackbird.git",
+      "state" : {
+        "branch" : "more-change-information",
+        "revision" : "734169591e46f4ef47f995c7d4fdc1c9930553db"
+      }
     }
   ],
   "version" : 2

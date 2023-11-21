@@ -12,6 +12,8 @@ import SpindlSDK
 @main
 struct Spindl_SDK_DemoApp: App {
     
+    @StateObject var demoViewModel = DemoViewModel()
+    
     init() {
         Task {
             do {
@@ -25,6 +27,7 @@ struct Spindl_SDK_DemoApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(demoViewModel)
         }
     }
 }
