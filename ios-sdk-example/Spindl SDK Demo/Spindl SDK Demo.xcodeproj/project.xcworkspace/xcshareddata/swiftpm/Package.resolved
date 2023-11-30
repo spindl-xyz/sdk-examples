@@ -12,10 +12,10 @@
     {
       "identity" : "blackbird",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/meir-toptal/Blackbird.git",
+      "location" : "https://github.com/marcoarment/Blackbird.git",
       "state" : {
-        "branch" : "more-change-information",
-        "revision" : "734169591e46f4ef47f995c7d4fdc1c9930553db"
+        "revision" : "e2bf935089cd7620031ea342eaf96bf4ba3a22dc",
+        "version" : "0.5.0"
       }
     }
   ],

@@ -27,6 +27,8 @@ struct ContentView: View {
             } label: {
                 Text("Random Event")
             }
+            .buttonStyle(.borderedProminent)
+            
         }
         .padding()
         
@@ -36,17 +38,22 @@ struct ContentView: View {
                 "New Event Name:",
                 text: $eventName
             )
+            .textFieldStyle(.roundedBorder)
             .focused($focusedField, equals: .eventNameField)
             
             TextField(
                 "Property Key:",
                 text: $propertyKey
-            ).focused($focusedField, equals: .propertyKeyField)
+            )
+            .textFieldStyle(.roundedBorder)
+            .focused($focusedField, equals: .propertyKeyField)
             
             TextField(
                 "Value:",
                 text: $propertyValue
-            ).focused($focusedField, equals: .propertyValueField)
+            )
+            .textFieldStyle(.roundedBorder)
+            .focused($focusedField, equals: .propertyValueField)
             
             Button {
                 vm.trackEvent(name: eventName, properties: [propertyKey:propertyValue])
@@ -57,6 +64,7 @@ struct ContentView: View {
             } label: {
                 Text("Track Event")
             }
+            .buttonStyle(.borderedProminent)
             .disabled(eventName.isEmpty)
         
         }
