@@ -56,6 +56,7 @@ class MainActivity : ComponentActivity() {
         apiKey = getString(R.string.spindlApiKey)
         lifecycleScope.launch {
             spindl = Spindl(context = applicationContext, lifecycleOwner = this@MainActivity)
+            spindl.initialize(apiKey = apiKey)
         }
 
         setContent {
@@ -112,7 +113,7 @@ class MainActivity : ComponentActivity() {
                                         )
                                         backgroundScope.launch {
 //                                                Log.d(TAG, "Hello from coroutine on ${Thread.currentThread().name}")
-                                            identify(apiKey = apiKey, walletAddress, email)
+                                            identify(walletAddress, email)
                                             walletAddress = ""
                                             email = ""
                                         }
@@ -176,8 +177,8 @@ class MainActivity : ComponentActivity() {
         spindl.clearEvents() // May be removed
     }
 
-    private suspend fun identify(apiKey: String, wallet: String, userId: String) {
-        spindl.identify(apiKey = apiKey, walletAddress = wallet, customerUserId = userId)
+    private suspend fun identify(wallet: String, userId: String) {
+        spindl.identify(walletAddress = wallet, customerUserId = userId)
     }
 
     private suspend fun trackNamedEvent(eventName: String) {
