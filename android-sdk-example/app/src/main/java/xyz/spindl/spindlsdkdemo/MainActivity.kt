@@ -10,13 +10,11 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Button
-import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.State
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -31,7 +29,6 @@ import com.google.gson.JsonObject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
 import org.apache.commons.lang3.RandomStringUtils
 import xyz.spindl.sdk.Spindl
 import xyz.spindl.spindlsdkdemo.ui.theme.SpindlSDKDemoTheme
@@ -42,18 +39,14 @@ import xyz.spindl.spindlsdkdemo.ui.theme.SpindlSDKDemoTheme
 
 private const val MAIN_ACTIVITY_TAG = "MainActivity"
 
-@OptIn(ExperimentalMaterial3Api::class)
 class MainActivity : ComponentActivity() {
     private lateinit var spindl: Spindl
-    private lateinit var apiKey: String
     private val backgroundScope = CoroutineScope(Dispatchers.Default)
-    private val hasIdentity: State<Boolean>
-        get() = mutableStateOf(spindl.hasIdentity)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        apiKey = getString(R.string.spindlApiKey)
+        val apiKey = getString(R.string.spindlApiKey)
         lifecycleScope.launch {
             spindl = Spindl(context = applicationContext, lifecycleOwner = this@MainActivity)
             spindl.initialize(apiKey = apiKey)
@@ -172,7 +165,7 @@ class MainActivity : ComponentActivity() {
         }
     }
 
-    private suspend fun clearData() {
+    private fun clearData() {
         //
         spindl.clearEvents() // May be removed
     }
@@ -181,7 +174,7 @@ class MainActivity : ComponentActivity() {
         spindl.identify(walletAddress = wallet, customerUserId = userId)
     }
 
-    private suspend fun trackNamedEvent(eventName: String) {
+    private fun trackNamedEvent(eventName: String) {
         val prop1Key = RandomStringUtils.randomAlphabetic(6)
         val prop1Value = RandomStringUtils.randomAlphanumeric(3, 9)
         val properties = JsonObject()
@@ -190,7 +183,7 @@ class MainActivity : ComponentActivity() {
         spindl.track(eventName, properties)
     }
 
-    private suspend fun trackRandomEvent() {
+    private fun trackRandomEvent() {
         val eventTitle = RandomStringUtils.randomAlphabetic(1, 12)
         val prop1Key = RandomStringUtils.randomAlphabetic(6)
         val prop1Value = RandomStringUtils.randomAlphanumeric(3, 9)
