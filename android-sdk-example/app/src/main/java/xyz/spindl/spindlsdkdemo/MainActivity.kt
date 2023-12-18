@@ -46,7 +46,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val apiKey = getString(R.string.spindlApiKey)
+        val apiKey = BuildConfig.SPINDL_API_KEY
         lifecycleScope.launch {
             spindl = Spindl(context = applicationContext, lifecycleOwner = this@MainActivity)
             spindl.initialize(apiKey = apiKey)
@@ -68,22 +68,22 @@ class MainActivity : ComponentActivity() {
                     Box(contentAlignment = Center) {
                         Column(horizontalAlignment = Alignment.CenterHorizontally) {
 
-                            Box {
-                                Button(onClick = {
-                                    Log.d(
-                                        MAIN_ACTIVITY_TAG,
-                                        "Clear Data onClick from ${Thread.currentThread().name}"
-                                    )
-                                    backgroundScope.launch {
-                                        clearData()
-
-                                    }
-                                }) {
-                                    Text("Reset Event Data")
-                                }
-                            }
-
-                            Spacer(modifier = Modifier.size(16.dp))
+//                            Box {
+//                                Button(onClick = {
+//                                    Log.d(
+//                                        MAIN_ACTIVITY_TAG,
+//                                        "Clear Data onClick from ${Thread.currentThread().name}"
+//                                    )
+//                                    backgroundScope.launch {
+//                                        clearData()
+//
+//                                    }
+//                                }) {
+//                                    Text("Reset Event Data")
+//                                }
+//                            }
+//
+//                            Spacer(modifier = Modifier.size(16.dp))
 
                             Box {
                                 Column(horizontalAlignment = Alignment.End) {
@@ -166,15 +166,13 @@ class MainActivity : ComponentActivity() {
     }
 
     private fun clearData() {
-        //
-        spindl.clearEvents() // May be removed
     }
 
     private suspend fun identify(wallet: String, userId: String) {
         spindl.identify(walletAddress = wallet, customerUserId = userId)
     }
 
-    private fun trackNamedEvent(eventName: String) {
+    private suspend fun trackNamedEvent(eventName: String) {
         val prop1Key = RandomStringUtils.randomAlphabetic(6)
         val prop1Value = RandomStringUtils.randomAlphanumeric(3, 9)
         val properties = JsonObject()
@@ -183,7 +181,7 @@ class MainActivity : ComponentActivity() {
         spindl.track(eventName, properties)
     }
 
-    private fun trackRandomEvent() {
+    private suspend fun trackRandomEvent() {
         val eventTitle = RandomStringUtils.randomAlphabetic(1, 12)
         val prop1Key = RandomStringUtils.randomAlphabetic(6)
         val prop1Value = RandomStringUtils.randomAlphanumeric(3, 9)

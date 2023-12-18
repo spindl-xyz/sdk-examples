@@ -25,7 +25,12 @@ android {
     }
 
     buildTypes {
+        debug {
+            buildConfigField("String", "SPINDL_API_KEY", "\"${project.properties["SPINDL_API_KEY"]}\"")
+        }
+
         release {
+            buildConfigField("String", "SPINDL_API_KEY", "\"${project.properties["SPINDL_API_KEY"]}\"")
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
@@ -36,6 +41,7 @@ android {
 
     buildFeatures {
         compose = true
+        buildConfig = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.3"
@@ -59,7 +65,7 @@ dependencies {
     implementation("androidx.compose.material3:material3:1.1.2")
     implementation("org.apache.commons:commons-lang3:3.14.0")
     implementation("com.google.code.gson:gson:2.10.1")
-    implementation("xyz.spindl:sdk:1.0.3")
+    implementation("xyz.spindl:sdk:1.0.4")
     implementation("com.appsflyer:af-android-sdk:6.12.4")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

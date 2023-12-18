@@ -1,5 +1,7 @@
 # spindl-android
 
+- To use: put the Spindl API key in the global `gradle.properties` file in a variable named `SPINDL_API_KEY`.
+
 ## Internal Setup for Spindl Developers
 
 ### Source code, making builds
