@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "anycodable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Flight-School/AnyCodable.git",
+      "state" : {
+        "revision" : "862808b2070cd908cb04f9aafe7de83d35f81b05",
+        "version" : "0.6.7"
+      }
+    },
+    {
+      "identity" : "appsflyerframework",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AppsFlyerSDK/AppsFlyerFramework",
+      "state" : {
+        "revision" : "0d8359239a349db4ac2aba8efe2ad8835fc799b5",
+        "version" : "6.12.2"
+      }
+    },
+    {
+      "identity" : "blackbird",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/marcoarment/Blackbird.git",
+      "state" : {
+        "revision" : "e2bf935089cd7620031ea342eaf96bf4ba3a22dc",
+        "version" : "0.5.0"
+      }
+    }
+  ],
+  "version" : 2
+}
