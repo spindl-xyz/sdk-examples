@@ -3,12 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		240B28682B34E96A001AC376 /* SpindlSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 240B28672B34E96A001AC376 /* SpindlSDK */; };
 		246E96442B25D6C9004B0424 /* SpindlSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 246E96432B25D6C9004B0424 /* SpindlSDK */; };
-		246E96472B25E065004B0424 /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 246E96462B25E065004B0424 /* AppsFlyerLib */; };
 		249A8E702B0D235700B69145 /* DemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249A8E6F2B0D235700B69145 /* DemoViewModel.swift */; };
 		249A8E742B0D37BA00B69145 /* SpindlSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 249A8E732B0D37BA00B69145 /* SpindlSDK */; };
 		24DC01972B0CD2DE0020AC12 /* Spindl_SDK_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DC01962B0CD2DE0020AC12 /* Spindl_SDK_DemoApp.swift */; };
@@ -20,6 +20,7 @@
 		24DC01B52B0CD2F90020AC12 /* Spindl_SDK_DemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DC01B42B0CD2F90020AC12 /* Spindl_SDK_DemoUITestsLaunchTests.swift */; };
 		24DC01C32B0CD5F90020AC12 /* SpindlSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 24DC01C22B0CD5F90020AC12 /* SpindlSDK */; };
 		24DC01C62B0CE0DB0020AC12 /* SpindlSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 24DC01C52B0CE0DB0020AC12 /* SpindlSDK */; };
+		24F4B9782B3449C800524133 /* SpindlSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 24F4B9772B3449C800524133 /* SpindlSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,10 +61,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				246E96442B25D6C9004B0424 /* SpindlSDK in Frameworks */,
-				246E96472B25E065004B0424 /* AppsFlyerLib in Frameworks */,
 				24DC01C32B0CD5F90020AC12 /* SpindlSDK in Frameworks */,
 				24DC01C62B0CE0DB0020AC12 /* SpindlSDK in Frameworks */,
 				249A8E742B0D37BA00B69145 /* SpindlSDK in Frameworks */,
+				24F4B9782B3449C800524133 /* SpindlSDK in Frameworks */,
+				240B28682B34E96A001AC376 /* SpindlSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,7 +165,8 @@
 				24DC01C52B0CE0DB0020AC12 /* SpindlSDK */,
 				249A8E732B0D37BA00B69145 /* SpindlSDK */,
 				246E96432B25D6C9004B0424 /* SpindlSDK */,
-				246E96462B25E065004B0424 /* AppsFlyerLib */,
+				24F4B9772B3449C800524133 /* SpindlSDK */,
+				240B28672B34E96A001AC376 /* SpindlSDK */,
 			);
 			productName = "Spindl SDK Demo";
 			productReference = 24DC01932B0CD2DE0020AC12 /* Spindl SDK Demo.app */;
@@ -238,8 +241,7 @@
 			);
 			mainGroup = 24DC018A2B0CD2DD0020AC12;
 			packageReferences = (
-				246E96422B25D6C9004B0424 /* XCLocalSwiftPackageReference "../../../spindl-ios" */,
-				246E96452B25E064004B0424 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+				240B28662B34E96A001AC376 /* XCRemoteSwiftPackageReference "spindl-ios" */,
 			);
 			productRefGroup = 24DC01942B0CD2DE0020AC12 /* Products */;
 			projectDirPath = "";
@@ -643,33 +645,26 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		246E96422B25D6C9004B0424 /* XCLocalSwiftPackageReference "../../../spindl-ios" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../../../spindl-ios";
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
-		246E96452B25E064004B0424 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+		240B28662B34E96A001AC376 /* XCRemoteSwiftPackageReference "spindl-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
+			repositoryURL = "https://github.com/spindl-xyz/spindl-ios.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 6.12.2;
+				minimumVersion = 1.0.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		240B28672B34E96A001AC376 /* SpindlSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 240B28662B34E96A001AC376 /* XCRemoteSwiftPackageReference "spindl-ios" */;
+			productName = SpindlSDK;
+		};
 		246E96432B25D6C9004B0424 /* SpindlSDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SpindlSDK;
-		};
-		246E96462B25E065004B0424 /* AppsFlyerLib */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 246E96452B25E064004B0424 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
-			productName = AppsFlyerLib;
 		};
 		249A8E732B0D37BA00B69145 /* SpindlSDK */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -680,6 +675,10 @@
 			productName = SpindlSDK;
 		};
 		24DC01C52B0CE0DB0020AC12 /* SpindlSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SpindlSDK;
+		};
+		24F4B9772B3449C800524133 /* SpindlSDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SpindlSDK;
 		};
