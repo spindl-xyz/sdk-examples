@@ -10,21 +10,21 @@
       }
     },
     {
-      "identity" : "appsflyerframework",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/AppsFlyerSDK/AppsFlyerFramework",
-      "state" : {
-        "revision" : "0d8359239a349db4ac2aba8efe2ad8835fc799b5",
-        "version" : "6.12.2"
-      }
-    },
-    {
       "identity" : "blackbird",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/marcoarment/Blackbird.git",
       "state" : {
         "revision" : "e2bf935089cd7620031ea342eaf96bf4ba3a22dc",
         "version" : "0.5.0"
+      }
+    },
+    {
+      "identity" : "spindl-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/spindl-xyz/spindl-ios.git",
+      "state" : {
+        "revision" : "216a63d0eaebbc0bac1bc8b93fc697b875e37f19",
+        "version" : "1.0.1"
       }
     }
   ],
