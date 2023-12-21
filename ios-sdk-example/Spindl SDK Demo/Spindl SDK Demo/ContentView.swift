@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     private enum FocusField : Hashable {
+        case walletField
+        case emailField
         case eventNameField
         case propertyKeyField
         case propertyValueField
@@ -18,9 +20,34 @@ struct ContentView: View {
     @State private var eventName: String = ""
     @State private var propertyKey: String = ""
     @State private var propertyValue: String = ""
+    @State private var wallet: String = ""
+    @State private var email: String = ""
     @FocusState private var focusedField: FocusField?
     
     var body: some View {
+        VStack {
+            TextField("Wallet Address:", text: $wallet)
+                .textFieldStyle(.roundedBorder)
+                .focused($focusedField, equals: .walletField)
+            
+            TextField("Email Address:", text: $email)
+                .textFieldStyle(.roundedBorder)
+                .focused($focusedField, equals: .emailField)
+            
+            Button {
+                vm.identify(wallet: wallet, email: email)
+                wallet = ""
+                email = ""
+                focusedField = .eventNameField
+            } label: {
+                Text("Identify")
+            }
+            .buttonStyle(.borderedProminent)
+            .disabled(wallet.isEmpty && email.isEmpty)
+            
+        }
+        .padding()
+        
         VStack {
             Button {
                 vm.trackRandomEvent()
