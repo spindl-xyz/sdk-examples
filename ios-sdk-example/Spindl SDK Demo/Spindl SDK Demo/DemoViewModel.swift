@@ -36,4 +36,16 @@ class DemoViewModel : ObservableObject {
             }
         }
     }
+    
+    func identify(wallet: String?, email: String?) {
+        Task {
+            do {
+                try await Spindl.shared.identify(walletAddress: wallet, customerUserId: email)
+            } catch {
+                let msg = "Call to identify (\(String(describing: wallet)), \(String(describing: email)) failed: \(error.localizedDescription)"
+                print(msg)
+                errorMessage = msg
+            }
+        }
+    }
 }

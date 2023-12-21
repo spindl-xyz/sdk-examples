@@ -17,13 +17,6 @@ struct Spindl_SDK_DemoApp: App {
     init() {
         AppsFlyerLib.shared().appleAppID = "xyz.spindl.Spindl-SDK-Demo"
         Spindl.initialize(apiKey: "<your api key>")
-        Task {
-            do {
-                try await Spindl.shared.identify(customerUserId: "sdkdemo@spindl.xyz")
-            } catch {
-                print("Couldn't initialise Spindl SDK: \(error.localizedDescription)")
-            }
-        }
         
         AppsFlyerLib.shared().start { (dict, err) in
             if let e = err {
