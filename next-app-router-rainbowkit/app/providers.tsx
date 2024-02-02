@@ -30,7 +30,7 @@ if (typeof window !== "undefined") {
   spindl.configure({
     sdkKey: process.env.NEXT_PUBLIC_SPINDL_SDK_KEY as string,
     debugMode: true, // only to use for testing to see console logs in browser. Set to false in production
-    host: `${window.location.origin}/ingest`,
+    host: `${window.location.origin}/api/_proxy/ingest`,
   });
 
   spindl.enableAutoPageViews();

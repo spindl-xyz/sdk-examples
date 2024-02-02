@@ -9,8 +9,9 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: "/ingest/:path*",
+        source: "/api/_proxy/ingest/:path*",
         destination: "https://spindl.link/:path*",
+        basePath: false,
       },
     ];
   },
