@@ -6,15 +6,16 @@ const nextConfig = {
     config.externals.push("pino-pretty", "lokijs", "encoding");
     return config;
   },
-  async rewrites() {
-    return [
-      {
-        source: "/api/_proxy/ingest/:path*",
-        destination: "https://spindl.link/:path*",
-        basePath: false,
-      },
-    ];
-  },
+  // async rewrites() {
+  //   return [
+  //     {
+  //       source: "/api/_proxy/ingest/:path*",
+  //       // destination: "https://spindl.link/:path*",
+  //       destination: "http://192.168.100.6:8787/:path*",
+  //       basePath: false,
+  //     },
+  //   ];
+  // },
 };
 
 module.exports = nextConfig;
