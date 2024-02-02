@@ -1,18 +1,24 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
-export function middleware(request: any) {
+export function middleware(request: NextRequest) {
   const hostname = "spindl.link";
 
   const requestHeaders = new Headers(request.headers);
+
   requestHeaders.set("host", hostname);
+
+  console.log("xxx request.ip", request.ip);
+  console.log("xxx requestHeaders", requestHeaders);
+
+  if (request.ip) {
+    requestHeaders.set("X-Forwarded-To", request.ip);
+  }
 
   let url = request.nextUrl.clone();
   url.protocol = "https";
   url.hostname = hostname;
-  url.port = 443;
+  url.port = "443";
   url.pathname = url.pathname.replace(/^\/ingest/, "");
-
-  console.log("xxx requestHeaders", requestHeaders);
 
   return NextResponse.rewrite(url, {
     headers: requestHeaders,
