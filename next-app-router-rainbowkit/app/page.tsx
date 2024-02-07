@@ -52,7 +52,7 @@ function Page() {
           height: "250px",
         }}
         placementId="1"
-        format={AdFormat.f970x250}
+        format={"970x250"}
         walletAddress="0x123"
       />
     </>
