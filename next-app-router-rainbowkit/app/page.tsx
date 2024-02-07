@@ -2,6 +2,7 @@
 
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { useAccount } from "wagmi";
+import { BannerAd } from "@spindl-xyz/embed-react";
 
 import spindl from "@spindl-xyz/attribution";
 import { useEffect } from "react";
@@ -17,31 +18,44 @@ function Page() {
   }, [address]);
 
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "flex-end",
-        padding: 12,
-      }}
-    >
-      <ConnectButton />
-      <button
-        onClick={() => {
-          spindl.track(
-            "test_event",
-            {
-              custom: "data goes here", // optional
-            },
-            {
-              address: "0x1234...", // optional
-              customerUserId: "1234", // optional
-            }
-          );
+    <>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "flex-end",
+          padding: 12,
         }}
       >
-        Track Custom Event
-      </button>
-    </div>
+        <ConnectButton />
+        <button
+          onClick={() => {
+            spindl.track(
+              "test_event",
+              {
+                custom: "data goes here", // optional
+              },
+              {
+                address: "0x1234...", // optional
+                customerUserId: "1234", // optional
+              }
+            );
+          }}
+        >
+          Track Custom Event
+        </button>
+        <br />
+      </div>
+      <BannerAd
+        publisherId="collabland"
+        style={{
+          width: "970px",
+          height: "250px",
+        }}
+        placementId="1"
+        format={AdFormat.f970x250}
+        walletAddress="0x123"
+      />
+    </>
   );
 }
 
