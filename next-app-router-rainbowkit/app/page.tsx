@@ -48,11 +48,11 @@ function Page() {
       <BannerAd
         publisherId="collabland"
         style={{
-          width: "970px",
+          width: "300px",
           height: "250px",
         }}
         placementId="1"
-        format={"970x250"}
+        format="300x250"
         walletAddress="0x123"
       />
     </>

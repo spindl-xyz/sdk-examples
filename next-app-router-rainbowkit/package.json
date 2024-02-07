@@ -13,7 +13,7 @@
     "@slise/embed-react": "^2.2.0",
     "@spindl-xyz/attribution": "^1.6.1",
     "@spindl-xyz/attribution-lite": "^1.6.1",
-    "@spindl-xyz/embed-react": "^0.0.11",
+    "@spindl-xyz/embed-react": "^0.0.12",
     "next": "^13.4.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
