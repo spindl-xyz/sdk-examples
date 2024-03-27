@@ -11,6 +11,8 @@ const nextConfig = {
       {
         source: "/ingest/:path*",
         destination: "https://spindl.link/:path*",
+        // destination: "http://192.168.100.6:8787/:path*",
+        basePath: false,
       },
     ];
   },
