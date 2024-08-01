@@ -2,20 +2,14 @@
 
 This CDN Script Does the following:
 
-1. Async script automatically enables autoPageViews + walletConnects
+1. Async script automatically enables autoPageViews
 2. Wallet Connects only track Wallets that are connected through Metamask
 3. You can access it in `window.spindl` and track extra custom events & other properties
 
-```html
-...
+### To Install Script SDK
 
-<script
-  async
-  data-key="ADD_sdkKey_HERE"
-  data-name="spindl-sdk"
-  src="https://cdn.spindl.xyz/attribution-latest.js"
-></script>
-```
+1. Use the latest version of the script SDK here: [Script Installation Guide](https://docs.spindl.xyz/spindl/techncial/javascript-sdk/install#installation-via-script-cdn)
+2. Once script tag is added to head of html, you should have access to SDK via `window.spindl` object and can send custom events such as `window.spindl.track('eventName', {...eventData})`
 
 ### To run locally
 
